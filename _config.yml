@@ -25,3 +25,8 @@ exclude: ["README.md"]
 exclude: [vendor]
 gems:
   - jekyll-paginate
+
+
+#SSL configuration
+url: https://LukeStorry.co.uk   # with the https protocol
+enforce_ssl: LukeStorry.co.uk   # without any protocol

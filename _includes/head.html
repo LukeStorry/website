@@ -1,4 +1,9 @@
 <head>
+    <script type="text/javascript">
+        var host = "yoursite.com";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
     <meta charset="UTF-8">
     <title>{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,4 +13,5 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/cayman.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/icon" href="{{ site.baseurl }}/images/icon.ico?">
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 </head>
