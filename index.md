@@ -17,6 +17,6 @@ Plus a few other things.
 
   <a class="twitter-follow-button"
     href="https://twitter.com/TwitterDev">
-  Follow @TwitterDev</a>
+  Follow @LukeStorry</a>
 
 <iframe src="https://ghbtns.com/github-btn.html?user=LukeStorry&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
