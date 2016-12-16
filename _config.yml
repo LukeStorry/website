@@ -10,7 +10,7 @@ github_username:  LukeStorry
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
-theme: minima
+theme: jekyll-theme-cayman
 gems:
   - jekyll-feed
 exclude:
