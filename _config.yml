@@ -22,5 +22,6 @@ instagram_username: LukeStorry
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
+exclude: [vendor]
 gems:
   - jekyll-paginate
