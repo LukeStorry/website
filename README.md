@@ -3,4 +3,4 @@
 
 Built using [Jekyll](https://jekyllrb.com/) and the  [Cayman Theme](https://jasonlong.github.io/cayman-theme/).
 
-Visit the live version [here](https://LukeStorry.co.uk).
+Visit the live version [here](http://LukeStorry.co.uk).
