@@ -1,18 +1,23 @@
+#Setup
 title: Luke Storry
-email: Luke@LukeStorry.co.uk
-description: >
-  Luke Storry's Homepage, Blog, Portfolio and list of links.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://LukeStorry.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+tagline: Computer Science student at the University of Bristol.
+description: Luke Storry's Homepage, Blog, Portfolio and list of links
+baseurl: "" # the subpath of your site, e.g. /blog
+paginate:     1
+
+# About/contact
+author:
+  name: Luke Storry
+  url: "http://LukeStorry.co.uk"
+  email: Luke@LukeStorry.co.uk
+
 twitter_username: LukeStorry
 github_username:  LukeStorry
+linkedin_username: LukeStorry
+facebook_username: Luke.Storry
 
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
-theme: jekyll-theme-cayman
 gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  - jekyll-paginate
