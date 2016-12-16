@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+title: Luke Storry
+email: Luke@LukeStorry.co.uk
+description: >
+  Luke Storry's Homepage, Blog, Portfolio and list of links.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://LukeStorry.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: LukeStorry
+github_username:  LukeStorry
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+=======
+theme: jekyll-theme-cayman
+>>>>>>> 4e7c57dd7963c9bc551a032686d564812393cccd
