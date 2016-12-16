@@ -2,7 +2,7 @@ title: Luke Storry
 email: Luke@LukeStorry.co.uk
 description: >
   Luke Storry's Homepage, Blog, Portfolio and list of links.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://LukeStorry.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LukeStorry
 github_username:  LukeStorry
