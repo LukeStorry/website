@@ -1,6 +1,6 @@
 #Setup
 title: Luke Storry
-url: "LukeStorry.co.uk"
+url: "lukestorry.co.uk"
 tagline: Computer Science student at the University of Bristol.
 description: Luke Storry's Homepage, Blog, Portfolio and list of links
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -9,7 +9,7 @@ paginate:     1
 # About/contact
 author:
   name: Luke Storry
-  url: "http://LukeStorry.co.uk"
+  url: "http://lukestorry.co.uk"
   email: Luke@LukeStorry.co.uk
 
 email: Luke@LukeStorry.co.uk
