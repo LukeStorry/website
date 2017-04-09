@@ -1,8 +1,8 @@
-#This is my simple website.
+# This is my simple website.
 
 [![Build Status](https://travis-ci.org/LukeStorry/LukeStorry.co.uk.svg?branch=master)](https://travis-ci.org/LukeStorry/LukeStorry.co.uk)
 
-##Visit the live version [here](http://LukeStorry.co.uk).
+## Visit the live version [here](http://LukeStorry.co.uk).
 
 
 Hosted by [GitHub Pages](https://pages.github.com/).
