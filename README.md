@@ -18,15 +18,26 @@ HTTPS by [Cloudfare](https://blog.cloudflare.com/secure-and-fast-github-pages-wi
 -----
 ## Usage
 Install Jekyll:
-`gem install jekyll bundler`
+```
+$ gem install jekyll bundler
+```
 
 install gem dependencies:
-`sudo bundle install`
+```
+$ bundle install
+```
 
 For live testing of changes:
-`bundle exec jekyll serve`
+```
+$ bundle exec jekyll serve
+```
 
 To build:
-`bundle exec jekyll build`
+```
+$ bundle exec jekyll build
+```
 
-Test: `bundle exec htmlproofer ./_site --check-favicon  --http-status-ignore 123,999`
+Test: 
+```
+$ bundle exec htmlproofer ./_site --check-favicon  --http-status-ignore 123,999
+```
