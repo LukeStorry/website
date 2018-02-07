@@ -9,4 +9,4 @@ addons:
 install:
  - pip install html5validator
 
-script: html5validator --root
+script: html5validator --root ./
