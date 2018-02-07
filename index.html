@@ -1,51 +1,80 @@
----
-layout: default
-title: {{ site.name }}
-url: /
----
+<!DOCTYPE HTML>
+<html>
 
-<div id="home">
-
-	<br>
-
-	<p>
-		I'm passionate about programming, kayaking and windsurfing.
-		<br> <br> Plus a few other things.
-	</p>
-
-	<br>
-
-	<h4>Feel free to look at my work or contact me through any of the links below:</h4>
-
-	<ul style="list-style-type: none;">
-		<li>
-			<a class="fa fa-github" href="https://www.github.com/{{ site.github_username }}">
-			Github </a>
-		</li>
-		<li>
-			<a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-			LinkedIn </a>
-		</li>
-		<li>
-			<a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
-			Facebook </a>
-		</li>
-		<li>
-			<a class="fa fa-twitter" href="https://www.twitter.com/{{ site.twitter_username }}">
-			Twitter	</a>
-		</li>
-		<li>
-			<a class="fa fa-instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
-		    Instagram </a>
-		</li>
-		<li>
-			<a class="fa fa-envelope" href="mailto:{{ site.email }}">
-			Email </a>
-		</li>
-
-	</ul>
+<head>
+	<title>Luke Storry</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
 
-	<br><br><br><br><br><br><br><br><br><br><br>
+<body class="is-loading">
 
-</div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main">
+			<header>
+				<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+				<h1>Luke Storry</h1>
+				<p>MEng Computer Science Student <br> University of Bristol</p>
+			</header>
+
+			<ul class="icons">
+				<li>
+					<a class="fa fa-github" href="https://www.github.com/LukeStorry"> Github </a>
+				</li>
+				<li>
+					<a class="fa fa-linkedin" href="https://www.linkedin.com/in/LukeStorry">LinkedIn </a>
+				</li>
+				<li>
+					<a class="fa fa-facebook" href="https://www.facebook.com/Luke.Storry">	Facebook </a>
+				</li>
+				<li>
+					<a class="fa fa-twitter" href="https://www.twitter.com/LukeStorry">	Twitter	</a>
+				</li>
+				<li>
+					<a class="fa fa-instagram" href="https://www.instagram.com/LukeStorry">	Instagram </a>
+				</li>
+				<li>
+					<a class="fa fa-envelope" href="mailto:Luke@LukeStorry.co.uk">Email </a>
+				</li>
+			</ul>
+			<p> Watersports enthusiast.
+				<br> Instructor. Educator.
+				<br> Photographer. Adventurer.
+				<br> Developer. Creator.
+			</p>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="copyright">
+			<li>&copy; Luke Storry</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+
+
+	<!-- Scripts -->
+	<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function() {
+				document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+			});
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+
+</body>
+
+</html>
