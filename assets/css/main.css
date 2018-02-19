@@ -727,11 +727,13 @@
 		#main .avatar {
 			position: relative;
 			display: block;
+			max-width:100%;
 			margin-bottom: 1.5em;
 		}
 
 			#main .avatar img {
 				display: block;
+				max-width:100%;
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
@@ -740,6 +742,7 @@
 			#main .avatar:before {
 				content: '';
 				display: block;
+				max-width:100%;
 				position: absolute;
 				top: 50%;
 				left: -3em;
