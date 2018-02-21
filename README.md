@@ -1,6 +1,7 @@
 # This is my website.
 
-[![Build Status](https://travis-ci.org/LukeStorry/LukeStorry.github.io.svg?branch=master)](https://travis-ci.org/LukeStorry/LukeStorry.github.io)
+[![Build Status](https://travis-ci.org/LukeStorry/LukeStorry.github.io.svg?branch=master)](https://travis-ci.org/LukeStorry/LukeStorry.github.io)  ![Website https://lukestorry.co.uk](https://img.shields.io/website-up-down-green-red/https/lukestorry.co.uk.svg)
+
 
 ## Visit the live version [here](http://LukeStorry.co.uk).
 
