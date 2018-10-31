@@ -13,10 +13,11 @@ body, html {
 
 .card-img-top {
   border-radius: 50%;
+  max-width: 20rem;
 }
 
 .card {
-  max-width: 25rem;
+  max-width: 35rem;
   opacity: .8;
 }
 
