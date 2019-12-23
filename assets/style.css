@@ -1,0 +1,45 @@
+body {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: large;
+  background: #42cdef;
+  background-image: url('/assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50%;
+  max-width: 20rem;
+}
+
+.card {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 3rem 0 4rem 0;
+  background-color: white;
+  background-color: rgba(255,255,255,0.8);
+  max-width: 35rem;
+  border-radius: .5rem;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  background-color: #42cdef;
+  text-decoration: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: black;
+  background-color: #42abcd;
+}
