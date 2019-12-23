@@ -34,11 +34,11 @@ p {
 }
 
 .button {
-  margin: 2rem auto 0 auto;
+  margin: 0.5rem 0.5rem;
   display: inline-block;
   padding: 1rem;
   color: white;
-  background-color: #42cdef;
+  background-color: black;
   text-decoration: none;
   border-radius: .5rem;
   cursor: pointer;
