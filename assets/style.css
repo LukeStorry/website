@@ -1,8 +1,12 @@
+html{
+  height:100%;
+}
+
 body {
   height: 100%;
   font-family: sans-serif;
   font-size: large;
-  background: #42cdef;
+  background-color: black;
   background-image: url('/assets/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,11 +29,12 @@ body {
   border-radius: .5rem;
 }
 
-.section {
-  margin-top: 2rem;
+p {
+  padding: 2rem;
 }
 
 .button {
+  margin: 2rem auto 0 auto;
   display: inline-block;
   padding: 1rem;
   color: white;
