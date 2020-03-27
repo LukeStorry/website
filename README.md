@@ -4,12 +4,10 @@
 
 Short and sweet, static just a list of links.
 
+Might put a blog here someday, who knows.
 
 ## Visit the live version [here](http://LukeStorry.co.uk).
 
 
-
-Hosted by [Netlify](https://netlify.com/).
-
-
-Caching & HTTPS by [Cloudfare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/).
+Hosted with [Netlify](https://netlify.com/).
+Mirrored by Github Pages so that project links still work.
