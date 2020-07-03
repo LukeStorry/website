@@ -22,20 +22,54 @@
             text-align: center;
             color: white;
             box-shadow: lightgrey 0 0 20px;
-            /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+        }
+
+        body, header, h1, a, img {
+            transition: all ease 1s;
+        }
+
+        h1:hover {
+            user-select: none;
+            color: #42cdef;
+            text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+            letter-spacing: 2px;
         }
 
         header img {
             border-radius: 10%;
             width: 60%;
             max-width: 15rem;
-            margin: 1rem;
+            margin: 1rem auto;
+        }
+
+        header img:hover {
+            width: 130%;
+            max-width: 70vw;
         }
 
         section {
             padding: 1rem 3rem;
             max-width: 50rem;
         }
+
+
+        section > a {
+            display: inline-block;
+            text-decoration: none;
+            border: #42cdef 2px solid;
+            color: #42cdef;
+            background-color: white;
+            padding: .5rem;
+            margin: .1rem;
+            font-size: 120%;
+        }
+
+        a:focus, a:hover {
+            color: white;
+            background-color: #42cdef;
+            font-weight: bold;
+        }
+
 
         @media (min-width: 800px) {
             body {
@@ -99,7 +133,7 @@
     <a href="https://www.linkedin.com/in/LukeStorry">LinkedIn</a>
     <a href="https://www.twitter.com/LukeStorry/">Twitter</a>
     <a href="https://www.instagram.com/LukeStorry/">Instagram</a>
-    <a href="mailto:Luke@LukeStorry.co.uk">Email</a>
+    <a href="mailto:Luke@Storry.uk">Email</a>
 </section>
 
 <section>
