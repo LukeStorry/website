@@ -52,7 +52,6 @@
             max-width: 50rem;
         }
 
-
         section > a {
             display: inline-block;
             text-decoration: none;
@@ -64,12 +63,19 @@
             font-size: 120%;
         }
 
-        a:focus, a:hover {
+        a:link {
+            color: #42cdef;
+        }
+
+        a:visited {
+            color: grey;
+        }
+
+        a:focus, a:hover, a:active {
             color: white;
             background-color: #42cdef;
             font-weight: bold;
         }
-
 
         @media (min-width: 800px) {
             body {
@@ -81,11 +87,11 @@
                 position: fixed;
                 top: 0;
                 height: 100%;
-                width: 15rem;
+                width: 16rem;
             }
 
             section {
-                padding-left: 22rem;
+                padding-left: 25rem;
             }
         }
 
