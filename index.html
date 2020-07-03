@@ -2,33 +2,91 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/assets/style.css">
-	<title>Luke Storry</title>
-	<meta name="description" content="Luke Storry's Homepage, Blog, Portfolio and list of links">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" type="image/icon" href="/assets/icon.ico?">
-	<link rel="canonical" href="/">
+    <meta charset="utf-8">
+    <title>Luke Storry</title>
+    <meta name="description" content="Luke Storry's homepage. Bristol-based software developer, windsurfer & climber.">
+    <meta name="keywords" content="luke,storry,software,bristol">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/icon" href="/assets/icon.ico?">
+    <style type="text/css">
+
+        body {
+            margin: 0;
+            font-family: monospace;
+            font-size: 150%;
+        }
+        @media only screen and (max-width: 800px) {
+            body {
+                font-size: 110%;
+            }
+        }
+        header {
+            background-color: #42cdef;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 1rem;
+        }
+
+        header img {
+            border-radius: 42%;
+            width: 50%;
+            max-width: 20rem;
+            margin: 1rem
+        }
+
+        section {
+            padding: 3rem;
+        }
+    </style>
 </head>
 
 <body>
-	  <div class="card">
-			<img class="avatar" src="assets/avatar.jpg" alt="Profile Picture">
-			<h1>Luke Storry</h1>
-			<p>Bristol-based software developer, windsurfer & climber</p>
-			<a class="button" href="https://github.com/LukeStorry">
-				Github
-			</a>
-			<a class="button" href="https://www.linkedin.com/in/LukeStorry">
-				LinkedIn
-			</a>
-			<a class="button" href="https://www.instagram.com/LukeStorry/">
-				Instagram
-			</a>
-			<a class="button" href="mailto:Luke@LukeStorry.co.uk">
-				Email
-			</a>
-		</div>
+
+<header>
+    <img src="assets/avatar.jpg" alt="Profile Picture">
+    <h1>Luke Storry</h1>
+</header>
+
+<section>
+    <h3>Bristol-based software developer, windsurfer & climber</h3>
+    <p>I currently work at <a href="https://www.ghyston.com/">Ghyston</a>, creating and maintaining bespoke
+        business-critical software.</p>
+</section>
+
+<section>
+    <p>In my spare time (when I'm not out on the water, up a mountain, or curled on the sofa reading a trashy crime
+        novel), I enjoy using the latest technologies to build simple, performant and elegant apps/software/tools.</p>
+    <ul>
+        <li><strong>Current go-to stack:</strong> <a href="https://www.gatsbyjs.org/">Gatsby</a>, hosted on
+            <a href="https://www.netlify.com/">Netlify</a>, with a <a href="https://firebase.google.com/">Firebase</a>
+            back-end if required.
+        </li>
+        <li>
+            <strong>Most experienced in:</strong> <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a> for
+            games & enterprise software, <a href="https://www.python.org/">Python</a> for machine-learning cloud
+            systems, and <a href="https://reactjs.org/">React</a> for heavy-duty UIs with.
+        </li>
+        <li>
+            <strong>Learning:</strong> <a href="https://svelte.dev/">Svelte</a> for charming web-apps, <a
+                href="https://www.rust-lang.org/">Rust</a> for speedy CLIs & WASM games, & <a
+                href="https://expo.io/">Expo</a> for easily-deployed mobile apps.
+
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h3>Find me at:</h3>
+    <a href="https://github.com/LukeStorry">Github</a>
+    <a href="https://www.linkedin.com/in/LukeStorry">LinkedIn</a>
+    <a href="https://www.twitter.com/LukeStorry/">Twitter</a>
+    <a href="https://www.instagram.com/LukeStorry/">Instagram</a>
+    <a href="mailto:Luke@LukeStorry.co.uk">Email</a>
+</section>
+
 </body>
 
 </html>
