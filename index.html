@@ -13,33 +13,49 @@
         body {
             margin: 0;
             font-family: monospace;
-            font-size: 150%;
+            font-size: 110%;
         }
-        @media only screen and (max-width: 800px) {
-            body {
-                font-size: 110%;
-            }
-        }
+
         header {
             background-color: #42cdef;
             padding: 3rem;
             text-align: center;
-        }
-
-        header h1 {
-            margin: 1rem;
+            color: white;
+            box-shadow: lightgrey 0 0 20px;
+            /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
         }
 
         header img {
-            border-radius: 42%;
-            width: 50%;
-            max-width: 20rem;
-            margin: 1rem
+            border-radius: 10%;
+            width: 80%;
+            max-width: 15rem;
+            margin: 1rem;
         }
 
         section {
-            padding: 3rem;
+            padding: 1rem 3rem;
+            max-width: 50rem;
         }
+
+        @media (min-width: 800px) {
+            body {
+                font-size: 140%;
+                margin-top: 3rem;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                height: 100%;
+                width: 15rem;
+                padding: 3rem;
+            }
+
+            section {
+                padding-left: 25rem;
+            }
+        }
+
     </style>
 </head>
 
@@ -67,7 +83,7 @@
         <li>
             <strong>Most experienced in:</strong> <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a> for
             games & enterprise software, <a href="https://www.python.org/">Python</a> for machine-learning cloud
-            systems, and <a href="https://reactjs.org/">React</a> for heavy-duty UIs with.
+            systems, and <a href="https://reactjs.org/">React</a> for heavy-duty UIs.
         </li>
         <li>
             <strong>Learning:</strong> <a href="https://svelte.dev/">Svelte</a> for charming web-apps, <a
@@ -87,6 +103,9 @@
     <a href="mailto:Luke@LukeStorry.co.uk">Email</a>
 </section>
 
+<section>
+    <i> Feel free to check out my stuff, or contact me with your latest app idea :) </i>
+</section>
 </body>
 
 </html>
