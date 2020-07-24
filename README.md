@@ -1,4 +1,4 @@
-# This is my website.
+# My website.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1707b5bf-4208-440b-a7b4-a976af3c2091/deploy-status)](https://app.netlify.com/sites/lukestorry/deploys)[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website)](https://lukestorry.co.uk/)
 
@@ -10,4 +10,3 @@ Might put a blog here someday, who knows.
 
 
 Hosted with [Netlify](https://netlify.com/).
-Mirrored by Github Pages so that project links still work.
