@@ -122,10 +122,10 @@
         top: -1px;
         right: 0;
         bottom: -2px;
-        left: 0;
+        left: 102%;
         border-left: 2px solid #42cdef;
         background-color: white;
-        animation: animatetoright 5s steps(40) infinite;
+        animation: animatetoright 5s steps(40) 1;
       }
 
       @keyframes animatetoright {
@@ -133,10 +133,8 @@
           left: 0;
           margin-right: auto;
         }
-        60% {
-          left: 102%;
-        }
         100% {
+          left: 102%;
           margin-left: 0.6em;
           margin-right: -0.6em;
         }
