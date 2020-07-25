@@ -15,6 +15,10 @@
         transition: all ease 1s;
       }
 
+      ::selection {
+        background: #42cdef;
+        color: white;
+      }
       body {
         margin: 0;
         font-family: monospace;
@@ -25,7 +29,6 @@
         background-color: #42cdef;
         padding: 3rem 2rem 1rem;
         text-align: center;
-        color: white;
         box-shadow: lightgrey 0 0 20px;
       }
       header img {
@@ -40,54 +43,10 @@
         border-radius: 0;
       }
 
-      h1:hover {
-        user-select: none;
-        color: #42cdef;
-        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-        letter-spacing: 2px;
-      }
-
-      ::selection {
-        background: #42cdef;
-        color: white;
-      }
-
       section {
+        color: #424242;
         padding: 1rem 1rem;
         max-width: 50rem;
-      }
-
-      section > a {
-        display: inline-block;
-        text-decoration: none;
-        border: #42cdef 2px solid;
-        color: #42cdef;
-        background-color: white;
-        padding: 0.5rem;
-        margin: 0.1rem;
-        font-size: 120%;
-        height: 1.5rem;
-      }
-
-      a:link {
-        color: #42cdef;
-      }
-
-      a:visited {
-        color: #424242;
-      }
-
-      a:active,
-      a:focus,
-      a:hover {
-        color: white;
-        background-color: #42cdef;
-        font-weight: bold;
-      }
-
-      a:active {
-        border: #424242 2px solid;
-        color: #424242;
       }
 
       @media (min-width: 800px) {
@@ -95,23 +54,47 @@
           font-size: 140%;
           margin-top: 3rem;
         }
-
         header {
           position: fixed;
           top: 0;
           height: 100%;
           width: 16rem;
         }
-
         section {
           padding-left: 25rem;
         }
       }
 
-      .typed {
+      h1:hover {
+        user-select: none;
+        color: #42cdef;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        letter-spacing: 2px;
+      }
+
+      a {
+        color: #424242;
+      }
+      a:focus,
+      a:hover {
+        color: white;
+        background-color: #42cdef;
+        font-weight: bold;
+      }
+      a:active {
+        border: #424242 2px solid;
+        color: #424242;
+      }
+
+      .button {
         display: inline-block;
-        position: relative;
-        line-height: 1;
+        text-decoration: none;
+        border: #42cdef 2px solid;
+        background-color: white;
+        padding: 0.5rem;
+        margin: 0.1rem;
+        font-size: 120%;
+        height: 1.5rem;
       }
 
       #bio::after {
@@ -161,7 +144,6 @@
         resize: none;
         border: #42cdef 2px solid;
         background-color: white;
-        color: #42cdef;
         font-family: monospace;
       }
       textarea:hover,
@@ -223,7 +205,7 @@
     <section>
       <h2 id="bio">
         Bristol-based software developer, windsurfer & climber
-      </h3>
+      </h2>
       <p>
         I currently work at <a href="https://www.ghyston.com/">Ghyston</a>,
         creating and maintaining bespoke business-critical software.
@@ -264,7 +246,7 @@
     </section>
 
     <section class="centered">
-      <h3>Find me at:</h3>
+      <h2>Find me at:</h2>
       <form name="contact" netlify>
         <label for="contact">
           Submit this form to quickly email me.
@@ -287,8 +269,9 @@
           </svg>
         </button>
       </form>
-      <a href="https://github.com/LukeStorry">Github</a>
+      <a class="button" href="https://github.com/LukeStorry">Github</a>
       <a
+        class="button"
         href="mailto:Luke@Storry.uk"
         onClick="
         const el = document.createElement('textarea');
@@ -304,9 +287,13 @@
       >
         Email
       </a>
-      <a href="https://www.linkedin.com/in/LukeStorry">LinkedIn</a>
-      <a href="https://www.twitter.com/LukeStorry/">Twitter</a>
-      <a href="https://www.instagram.com/LukeStorry/">Instagram</a>
+      <a class="button" href="https://www.linkedin.com/in/LukeStorry"
+        >LinkedIn</a
+      >
+      <a class="button" href="https://www.twitter.com/LukeStorry/">Twitter</a>
+      <a class="button" href="https://www.instagram.com/LukeStorry/"
+        >Instagram</a
+      >
     </section>
     <section>
       <i>

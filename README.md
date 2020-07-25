@@ -4,6 +4,8 @@
 
 Short, sweet and static, just a list of links, with some nice css-animations and a hidden contact form.
 
+The small snippets of JS are optional and degrade smoothly, Lighthouse scores are 100 across the board.
+
 Might put a blog here someday, who knows.
 
 ## Visit the live version [here](http://LukeStorry.co.uk).
