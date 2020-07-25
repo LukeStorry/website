@@ -28,14 +28,6 @@
         color: white;
         box-shadow: lightgrey 0 0 20px;
       }
-
-      h1:hover {
-        user-select: none;
-        color: #42cdef;
-        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-        letter-spacing: 2px;
-      }
-
       header img {
         border-radius: 10%;
         width: 60%;
@@ -47,9 +39,22 @@
         max-width: 70vw;
         border-radius: 0;
       }
+
+      h1:hover {
+        user-select: none;
+        color: #42cdef;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        letter-spacing: 2px;
+      }
+
+      ::selection {
+        background: #42cdef;
+        color: white;
+      }
+
       section {
         padding: 1rem 3rem;
-        max-width: 50rem;
+        max-width: 58rem;
       }
 
       section > a {
@@ -101,6 +106,7 @@
           padding-left: 25rem;
         }
       }
+
       .typed {
         display: inline-block;
       }
