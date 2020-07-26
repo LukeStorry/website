@@ -22,7 +22,7 @@
       body {
         margin: 0;
         font-family: monospace;
-        font-size: 110%;
+        font-size: large;
       }
 
       header {
@@ -46,12 +46,11 @@
       section {
         color: #424242;
         padding: 1rem 1rem;
-        max-width: 50rem;
+        max-width: 52rem;
       }
 
       @media (min-width: 800px) {
         body {
-          font-size: 140%;
           margin-top: 3rem;
         }
         header {
@@ -59,6 +58,10 @@
           top: 0;
           height: 100%;
           width: 16rem;
+        }
+        h2 {
+          margin-left: -1rem;
+          font-size: xx-large;
         }
         section {
           padding-left: 25rem;
@@ -71,7 +74,9 @@
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         letter-spacing: 2px;
       }
-
+      h2 {
+        font-size: x-large;
+      }
       a {
         color: #424242;
       }
@@ -93,10 +98,9 @@
         background-color: white;
         padding: 0.5rem;
         margin: 0.1rem;
-        font-size: 120%;
+        font-size: x-large;
         height: 1.5rem;
       }
-
       #bio::after {
         content: "| ";
         color: #42cdef;
@@ -112,31 +116,25 @@
       form {
         display: inline-block;
         vertical-align: top;
-        color: white;
-        font-size: 0.1px;
-        margin: 0 1.5rem 2rem 0;
+        margin: -1.1rem 1.5rem 2.6rem 0;
         width: 8rem;
         height: 1.5rem;
       }
       form:hover {
-        margin-top: -0.25rem;
-        width: 12rem;
-        height: 2.5rem;
-        color: #42cdef;
+        width: 10rem;
+        height: 2rem;
       }
       form:focus-within,
       form:focus,
       form.focused {
-        font-size: 80%;
         height: 4rem;
         width: 100%;
         color: #42cdef;
-        margin: 0px 5rem 3rem -1rem;
+        margin-left: -0.75rem;
       }
-
       textarea {
-        font-size: large;
-        margin: 0.1rem;
+        text-decoration: none;
+        overflow: hidden;
         width: 100%;
         height: 100%;
         outline: none;
@@ -144,12 +142,14 @@
         resize: none;
         border: #42cdef 2px solid;
         background-color: white;
-        font-family: monospace;
+        font-family: inherit;
+        font-size: large;
       }
       textarea:hover,
       textarea:focus,
       textarea:active,
-      textarea.focused {
+      textarea.focused,
+      form:focus-within textarea {
         text-align: left;
         color: white;
         background-color: #42cdef;
@@ -158,16 +158,23 @@
       textarea::placeholder {
         text-decoration: none;
         text-align: center;
-        font-family: monospace;
         color: inherit;
-        font-size: 120%;
-        transition: font-size 0.5s;
+        font-size: x-large;
+        transition: inherit;
       }
-      textarea:hover::placeholder {
-        font-weight: bold;
-      }
+      form:focus-within textarea::placeholder,
       textarea:focus::placeholder {
-        font-size: 0.1px;
+        font-size: 0.1pt;
+      }
+
+      form label {
+        font-size: 0.1rem;
+        color: white;
+      }
+      form:focus-within label,
+      form:focus label {
+        font-size: small;
+        color: #42cdef;
       }
 
       form button {
