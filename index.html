@@ -177,28 +177,28 @@
         color: #42cdef;
       }
 
+      form button svg {
+        fill: white;
+        width: 2rem;
+        height: 2rem;
+      }
       form button {
         display: none;
         border: none;
-        outline: none;
         position: relative;
-        bottom: 2rem;
-        left: 97%;
+        left: 95%;
+        bottom: 60%;
         background-color: transparent;
-        margin: -1rem;
-        padding: 0.5rem;
-        cursor: pointer;
+        margin: -0.8rem;
       }
       form:focus-within button,
       form:focus button {
         display: block;
-        fill: white;
-        width: 3rem;
-        height: 3rem;
       }
-      button:focus,
-      button:hover {
-        fill: black;
+      form button:focus svg,
+      form button:hover svg {
+        transform: rotate(-10deg) translate(0.5rem, -0.5rem);
+        filter: brightness(30%);
       }
     </style>
   </head>
