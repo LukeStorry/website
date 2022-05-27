@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Luke Storry CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0.11rem 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Mulish', sans-serif;
+            padding: 1rem 1.5rem;
+            font-size: 80%;
+            --colour: #42abcd;
+            max-width: 80rem;
+            min-width: 45rem;
+            margin: 2rem;
+            border: 1px solid var(--colour);
+            box-shadow: 5px 7px 8px grey;
+            border-radius: 1rem;
+            overflow-wrap: break-word;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 21cm;
+                height: 29cm;
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--colour);
+            padding: 0 4rem 1rem;
+        }
+
+        h1 {
+            color: var(--colour);
+        }
+
+        #subtitle {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 0.5rem;
+        }
+
+        aside {
+            margin-top: 0.5rem;
+            padding: 0 1rem 0 0;
+            border-right: 1px solid var(--colour);
+            flex: 1;
+            align-self: flex-start;
+        }
+
+        main {
+            flex: 3;
+            padding-left: 1rem;
+        }
+
+        section:not(:first-child) {
+            margin: 0.3rem 0;
+            padding: 0.3rem 0;
+            border-top: 1px solid var(--colour);
+        }
+
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 0.3rem 0
+        }
+
+        a span {
+            font-weight: bold;
+        }
+
+        ul {
+            padding: 0 0 0 1.1rem;
+            margin: 0;
+            list-style-type: "~ ";
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stack {
+            font-size: 0.7rem;
+            margin-right: -0.2rem;
+            /* font-family: monospace; */
+        }
+
+        main .stack:empty {
+            width: 13rem;
+        }
+
+        .date {
+            font-weight: lighter;
+            font-size: smaller
+        }
+
+        mark {
+            padding: 0.2rem;
+            margin: 0.2rem;
+            color: white;
+            background-color: var(--colour);
+            border-radius: 0.2rem;
+        }
+    </style>
+
+</head>
+
+<body></body>
+
+<script type="text/babel">
+
+    const Header = () =>
+        <header>
+            <h1>Luke Storry</h1>
+            <p id="subtitle">Full-stack Software Engineer</p>
+            <p>With over 4 years of experience creating complex applications for a range of businesses and industries,<br />
+                I am now looking for a new challenge; for a friendly and diverse team to work with;
+                and for an opportunity to use my varied skill-set to make a positive difference to the world.</p>
+        </header>
+
+    const Section = ({ title, details, stack = [], date }) =>
+        <section>
+            <div class="flex">
+                <h3>
+                    {title}
+                </h3>
+                {date && <span class="date">{date}</span>}
+                <span class="stack">
+                    {stack.map(x => <mark>{x}</mark>)}
+                </span>
+            </div>
+            <ul>
+                {details.map(d => <li>{d}</li>)}
+            </ul>
+        </section>;
+
+
+    const LeftSide = () =>
+        <aside>
+            <div>
+                <p>07805 925658</p>
+                <a href="mailto:luke@storry.uk?subject=Great CV, want a job?">Luke@Storry.uk</a>
+                <a href="https://www.linkedin.com/in/lukestorry/">LinkedIn.com/<span>LukeStorry</span></a>
+                <a href="https://GitHub.com/LukeStorry">GitHub.com/<span>LukeStorry</span></a>
+            </div>
+            <Section
+                title="Education"
+                date="2014-2019"
+                details={[
+                    "2.1 in MEng Computer Science at the University of Bristol",
+                    "Focussed on User-centric Design, Product Development, and Machine Learning.",
+                    "Published Dissertation on building & user-testing a mobile app for climbing training, using accelerometer and video data, awarded 'Best Software Project'."
+                ]} />
+
+            <Section title="Climbing"
+                details={[
+                    "I'm a fan of reaching new heights both at the desk and on the wall.",
+                    "Regularly boulder at indoor walls, heading out to the mountains for longer lead-climbing trips.",
+                    // "Built a acceleration-analysis app for climbing training, and studied its effectiveness as part of my Masters Thesis."
+                ]}
+            />
+            <Section title="Windsurfing"
+                details={[
+                    "Love the thrill of both foiling and flat-water-blasting.",
+                    `Have worked abroad as an instructor for multiple summer seasons,
+                        most recently managing a school in Vassiliki, Greece.`,
+                    "Volunteered for the SWA, a non-profit that promotes university windsurfing, in marketing and events-management."
+                ]}
+            />
+            <Section title="Fun Facts"
+                details={[
+                    "I live on a narrowboat called Edward Arthur.",
+                    "I self-converted a campervan for weekend adventures.",
+                    "I can ride a unicycle."
+                ]}
+            />
+
+        </aside>
+
+    const Main = () =>
+        <main>
+            <p>Since 2019 I've been at <strong>Ghyston</strong>, a Bristol-based software consultancy,
+                fulfilling a variety of roles in both internal and external teams,
+                using whichever tech stack best suits the job.
+            </p>
+
+            <Section
+                title="Product Owner"
+                date="April 2022 -> Present"
+                stack={["Azure Devops", "Adobe Xd", "Vue.Js", "Dotnet"]}
+                details={[
+                    `Uncovered the key features of a new complex analytics platform for a UK supermarket,
+                    modelling supplier costs to reduce the impact of inflation.`,
+                    "Worked closely with the client and designers to establish key user flows.",
+                    "Formed a series of complex data-models and scaffolded the frontend.",
+                ]} />
+
+            <Section title="Technical Sales Consultant"
+                date="2022"
+                details={[
+                    "Met with prospective clients as part of the sales team, offering technical guidance.",
+                    "Scope- and cost-estimated projects, culminating in multiple successful sales proposals.",
+                ]}
+            />
+
+            {/*
+            <Section title="Technical Outreach"
+                // stack={["Markdown", "Reveal.Js"]}
+                date="2022"
+                details={[
+                    "Evangelised Ghyston's technical expertise in the local dev community.",
+                    "Mentored and editing colleagues' blog posts and presentations.",
+                    // "Advocated going to tech conferences, as both speakers and audience.",
+                ]}
+            />
+            */}
+
+            <Section title="Lead Developer"
+                date="February -> March 2022"
+                stack={["Next.Js", "Tailwind", "Firebase", "GCP", "Auth0"]}
+                details={[
+                    "Architected and built the front end app for a new PropTech startup.",
+                    "Implemented a pre-specified design system to ensure branding consistency.",
+                    "Liaised closely with the client to provide the most effective MLP.",
+                ]} />
+            <Section
+                title="Tech Lead"
+                date="August 2021 -> January 2022"
+                stack={["Python", "AI/ML", "SQL"]}
+                details={[
+                    `Worked on an asset-availability forecasting simulation for a government department,
+                    projected to save the taxpayer over £200M.`,
+                    "Mentored team-mates via a mixture of workshops, paired-programming and in-depth code reviews.",
+                    `Carried out deep refactorings, updating core data-models with production-ready OOP code,
+                    improving performance by an order of magnitude.`,
+                    `Analysed the validity of various Deep Learning Optimisation techniques, 
+                    successfully demonstrating to stakeholders the value of further investment.`
+                ]} />
+            <Section
+                title="Fullstack Developer"
+                date="February -> August 2021"
+                stack={[".NET", "RazorPages", "Stimulus.js", "D3.js"]}
+                details={[
+                    "Iteratively developed intricate user flows and multi-layered forms to securely handle inputs to the above forecasting model.",
+                    "Created interactive graphs and analytics dashboards to enable the digestion of millions of data-points.",
+                ]} />
+            <Section title="CSR Officer"
+                date="2021"
+                details={[
+                    "Connected local charities with volunteer developers, providing website help.",
+                    "Expanded the CSR initiative, leading to a new committee structure and more carbon-reduction and community projects alongside fundraising.",
+                ]}
+            />
+            <Section
+                title="Support Engineer"
+                date="2020"
+                stack={["Typescript", "React", "SQL", "DotNet", "Java", "React Native", "+more"]}
+                details={[
+                    "Provided third-tier support for a range of bespoke business-critical software systems.",
+                    "Client management, bug-fixes and feature development, often on legacy systems",
+                    `Projects included national freight logistics, apps for care-home staff, HR systems,
+                    backend for a leading roadside-assistance company, web-scraping analytics, and large e-commerce platforms.`,
+                ]} />
+
+            <Section
+                title="Research Developer (non-Ghyston)"
+                date="2018"
+                stack={["Python"]}
+                details={[
+                    `Worked for Swanbarton, a energy-storage-consultancy in their R&D wing,
+                    developing industrial solar-storage solutions and an energy-trading platform.`,
+                ]} />
+
+
+        </main>
+
+
+
+    const CV = () =>
+        <React.Fragment>
+            <Header />
+            <div class="flex">
+                <LeftSide />
+                <Main />
+            </div>
+        </React.Fragment>
+
+    ReactDOM.createRoot(document.body)
+        .render(React.createElement(CV));
+
+
+</script>
+
+</html>
