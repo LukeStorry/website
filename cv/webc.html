@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Luke Storry CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0.11rem 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 2rem;
+        }
+
+        body {
+            font-family: 'Mulish', sans-serif;
+            padding: 1rem 1.5rem;
+            font-size: 80%;
+            --colour: #42abcd;
+            max-width: 70rem;
+            min-width: 45rem;
+            margin: auto;
+            border: 1px solid var(--colour);
+            box-shadow: 5px 7px 8px grey;
+            border-radius: 1rem;
+            overflow-wrap: break-word;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 21cm;
+                height: 29cm;
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--colour);
+            padding: 0 4rem 1rem;
+        }
+
+        h1 {
+            color: var(--colour);
+        }
+
+        #subtitle {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 0.5rem;
+        }
+
+        aside {
+            margin-top: 0.5rem;
+            padding: 0 1rem 0 0;
+            border-right: 1px solid var(--colour);
+            flex: 1;
+            align-self: flex-start;
+        }
+
+        main {
+            flex: 3;
+            padding-left: 1rem;
+        }
+
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 0.3rem 0
+        }
+
+        a span {
+            font-weight: bold;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Luke Storry (IN PROGRESS)</h1>
+        <p id="subtitle">Full-stack Software Engineer</p>
+        <p>With over 4 years of experience creating complex applications for a range of businesses and
+            industries,<br /> I am now looking for a new challenge;
+            for a friendly and diverse team to work with;
+            and for an opportunity to use my varied skill-set to make a positive difference to the world.</p>
+    </header>
+    <div class="flex">
+        <aside>
+            <div>
+                <p>07XXX XXXXXX</p> <a
+                    href="mailto:luke@storry.uk?subject=Great CV, fancy a new role?">Luke@Storry.uk</a> <a
+                    href="https://www.linkedin.com/in/lukestorry/">LinkedIn.com/<span>LukeStorry</span></a> <a
+                    href="https://GitHub.com/LukeStorry">GitHub.com/<span>LukeStorry</span></a>
+            </div> <cv-section>
+                <h3 slot="title">Education</h3> <span slot='date'>=2014-2019</span>
+                <li slot="details">2.1 in MEng Computer Science at the University of Bristol </li>
+                <li slot="details">Focussed on User-centric Design, Product Development, and Machine Learning. </li>
+                <li slot="details">Published Dissertation on building & user-testing a mobile app for climbing training,
+                    using accelerometer and video data, awarded 'Best Software Project' </li>
+            </cv-section> <cv-section>
+                <h3 slot="title">Climbing</h3>
+                </li>
+                <li slot="details"> "I'm a fan of reaching new heights both at the desk and on the wall.</li>
+                <li slot="details"> "Regularly boulder at indoor walls, heading out to the mountains for longer
+                    lead-climbing trips.</li>
+                <li slot="details"> "Built a acceleration-analysis app for climbing training, and studied its
+                    effectiveness as part of my Masters Thesis.</li>
+            </cv-section> <cv-section>
+                <h3 slot="title"> Windsurfing</h3>
+                <li slot="details"> Love the thrill of both foiling and flat-water-blasting.</li>
+                <li slot="details"> Have worked abroad as an instructor for multiple summer seasons, most recently
+                    managing a school in Vassiliki, Greece.</li>
+                <li slot="details"> Volunteered for the SWA, a non-profit that promotes university windsurfing, in
+                    marketing and events-management.</li>
+            </cv-section> <cv-section>
+                <h3 slot="title"> Fun Facts</h3>
+                <li slot="details"> I live on a narrowboat called Eddy.</li>
+                <li slot="details"> I self-converted a campervan for weekend adventures. </mark><mark slot='stack'>I can
+                        ride a unicycle </li>
+            </cv-section>
+        </aside>
+        <main> <cv-section>
+                <h3 slot="title">Technical Consultant</h3> <span slot='date'>=2022</span> </li>
+                <li slot="details">Met with prospective clients as part of the sales team, offering technical guidance.
+                </li>
+                <li slot="details"> Scope- and cost-estimated projects, culminating in multiple successful sales
+                    proposals.</li>
+            </cv-section> <cv-section>
+                <h3 slot="title">Tech Lead</h3> <span slot='date'>="August 2021 -> January 2022" </span> <mark
+                    slot='stack'>Python</mark> <span slot='stack'>AI/ML </span> <mark slot='stack'>SQL</mark>
+                <li slot="details"> Worked on an asset-availability forecasting simulation for a government department,
+                    projected to save the taxpayer over £200M.</li>
+                <li slot="details"> Mentored team-mates via a mixture of workshops, paired-programming and in-depth code
+                    reviews.</li>
+                <li slot="details"> Carried out deep refactorings, updating core data-models with production-ready OOP
+                    code, improving performance by an order of magnitude.</li>
+                <li slot="details"> Analysed the validity of various Deep Learning Optimisation techniques, successfully
+                    demonstrating to stakeholders the value of further investment.</li>
+            </cv-section> <cv-section>
+                <h3 slot="title"> Fullstack Developer</h3> <span slot='date'>=February -> August 2021</span> <mark
+                    slot='stack'>.NET</mark> <mark slot='stack'>RazorPages</mark> <mark slot='stack'>Stimulus.js</mark>
+                <mark slot='stack'>D3.js</mark>
+                <li slot="details">Iteratively developed intricate user flows and multi-layered forms to securely handle
+                    inputs to the above forecasting model.</li>
+                <li slot="details">Created interactive graphs and analytics dashboards to enable the digestion of
+                    millions of data-points</li>
+            </cv-section> <cv-section>
+                <h3 slot="title"> Support Engineer</h3> <span slot='date'>="2020" </span> <mark
+                    slot='stack'>Typescript</mark> <mark slot='stack'>React</mark> <mark slot='stack'>SQL</mark> <mark
+                    slot='stack'>DotNet</mark> <mark slot='stack'>Java</mark> </li>
+                <li slot="details">Provided third-tier support for a range of bespoke business-critical software
+                    systems.</li>
+                <li slot="details">Client management, bug-fixes and feature development, often on legacy systems" ,
+                    `Projects included national freight logistics, apps for care-home staff, HR systems, backend for a
+                    leading roadside-assistance company, web-scraping analytics, and large e-commerce platforms.</li>
+            </cv-section> <cv-section>
+                <h3 slot="title"> Swanbarton - Research Developer</h3> <span slot='date'>=2018</span> <mark
+                    slot='stack'>Python</mark>
+                <li slot="details">Worked for Swanbarton, a energy-storage-consultancy in their R&D wing, developing
+                    industrial solar-storage solutions and an energy-trading platform </li>
+            </cv-section> </main>
+    </div>
+
+
+    <template id="cv-section">
+        <style>
+            .stack {
+                font-size: 0.7rem;
+                margin-right: -0.2rem;
+                /* font-family: monospace; */
+            }
+
+            .stack:empty {
+                width: 13rem;
+            }
+
+            .date {
+                font-weight: lighter;
+                font-size: smaller
+            }
+
+            mark {
+                padding: 0.2rem;
+                margin: 0.2rem;
+                color: white;
+                background-color: var(--colour);
+                border-radius: 0.2rem;
+            }
+
+            section:not(:first-child) {
+                margin: 0.3rem 0;
+                padding: 0.3rem 0;
+                border-top: 1px solid var(--colour);
+            }
+
+            ul {
+                padding: 0 0 0 1.1rem;
+                margin: 0;
+                list-style-type: "~ ";
+            }
+        </style>
+
+        <section>
+            <div class="flex">
+                <slot name="title">
+                    <h3> NEEDS TITLE </h3>
+                </slot>
+                <span class="date">
+                    <slot name="date"></slot>
+                </span>
+                <mark class="stack">
+                    <slot name="stack"></slot>
+                </mark>
+            </div>
+            <ul>
+                <slot name="details"></slot>
+            </ul>
+        </section>
+    </template>
+</body>
+<script>
+    customElements.define("cv-section", class extends HTMLElement {
+        constructor() {
+            super();
+            let template = document.getElementById("cv-section");
+            const shadowRoot = this.attachShadow({ mode: "open" });
+            shadowRoot.appendChild(template.content.cloneNode(true));
+        }
+    },);
+</script>
+
+</html>
