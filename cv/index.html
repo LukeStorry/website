@@ -38,7 +38,7 @@
   </head>
 
   <body
-    class="p-2 md:p-4 text-sm md:text-base max-w-5xl sm:m-1 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
+    class="p-2 md:p-4 text-sm md:text-base max-w-5xl min-w-96 sm:m-1 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
   >
     <header class="border-b border-sky-500 m-1 pb-4 text-center">
       <h1 class="text-sky-500 text-3xl">Luke Storry</h1>
@@ -67,7 +67,7 @@
     );
 
     const Left = () => (
-      <aside className="mt-2 pr-2 md:pr-4 border-r border-sky-500">
+      <aside className="mt-2 pr-2 min-w-16 md:pr-4 border-r border-sky-500">
         <div>
           <p>07XXX XXXXXX</p>
           <p>
@@ -226,7 +226,7 @@
             </span>
           )}
           {stack && (
-            <span className="text-xs mr-1 h-10 max-w-72 flex gap-2 flex-wrap justify-end lg:-mt-8 print:-mt-6 ">
+            <span className="text-xs mr-1 min-h-10 max-w-72 flex gap-2 flex-wrap justify-end lg:-mt-8 print:-mt-6 ">
               {stack.map((s) => (
                 <mark className="px-1 h-4 text-white bg-sky-500 rounded-sm">
                   {s}
