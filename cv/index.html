@@ -27,7 +27,7 @@
     <style>
       html {
         width: 100%;
-        /* font-size: 80%; */
+        font-size: 90%;
       }
       body {
         font-family: "Sono", monospace;
@@ -38,7 +38,7 @@
   </head>
 
   <body
-    class="p-2 md:p-4 text-xs md:text-sm max-w-5xl sm:m-1 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
+    class="p-2 md:p-4 text-sm md:text-base max-w-5xl sm:m-1 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
   >
     <header class="border-b border-sky-500 m-1 pb-4 text-center">
       <h1 class="text-sky-500 text-3xl">Luke Storry</h1>
@@ -53,7 +53,7 @@
       </p>
     </header>
 
-    <div id="root" class="flex gap-2 md:gap-4" />
+    <div id="root" class="grid grid-cols-3 gap-2 md:gap-4" />
   </body>
 
   <script type="text/babel">
@@ -67,7 +67,7 @@
     );
 
     const Left = () => (
-      <aside className="mt-2 pr-2 md:pr-4 border-r border-sky-500 min-w-44">
+      <aside className="mt-2 pr-2 md:pr-4 border-r border-sky-500">
         <div>
           <p>07XXX XXXXXX</p>
           <p>
@@ -76,13 +76,21 @@
             </a>
           </p>
           <p>
-            <a href="https://www.linkedin.com/in/lukestorry/">
-              LinkedIn.com/<span className="font-bold">LukeStorry</span>
+            <a
+              className="flex flex-wrap w-full"
+              href="https://www.linkedin.com/in/lukestorry/"
+            >
+              LinkedIn.com/
+              <span className="font-bold block">LukeStorry</span>
             </a>
           </p>
           <p>
-            <a href="https://GitHub.com/LukeStorry">
-              GitHub.com/<span className="font-bold">LukeStorry</span>
+            <a
+              className="flex flex-wrap w-full"
+              href="https://GitHub.com/LukeStorry"
+            >
+              GitHub.com/
+              <span className="font-bold block">LukeStorry</span>
             </a>
           </p>
         </div>
@@ -124,12 +132,19 @@
     );
 
     const Right = () => (
-      <main className="">
+      <main className="col-span-2">
         <Section
           title="Senior Software Engineer"
           company="Let's Do This"
           date="2022→Present"
-          stack={["Typescript", "NextJs", "Node.js", "Graphql", "MongoDB"]}
+          stack={[
+            "Typescript",
+            "NextJs",
+            "Node.js",
+            "Graphql",
+            "CSS",
+            "MongoDB",
+          ]}
           details={[
             "High-velocity fullstack engineer at the leading sports-event discovery and management startup.",
             "Primarily based in the complex-ticketing-flow team, building out features for extremely high-stakes, high-load (>100 bookings-per-second) events such as the London Marathon Ballot.",
@@ -200,11 +215,10 @@
       <section className="pt-4 mt-4 border-t border-sky-500 first:border-none first:pt-0">
         <div className="flex gap-2 md:gap-8 justify-between items-center">
           <div className="md:shrink-0 min-w-28 sm:min-w-72">
-            <h3 className="text-sky-500 text-base md:text-lg">{title}</h3>
+            <h3 className="text-sky-500 text-base sm:text-lg md:text-xl">
+              {title}
+            </h3>
             <span className="flex gap-4 items-center">
-              {
-                //company && <span className="font-thin text-xs">{company}</span>
-              }
               {date && (
                 <span className="font-thin pl-1 mb-2">
                   {company && `${company} - `}
@@ -214,7 +228,7 @@
             </span>
           </div>
           {stack && (
-            <span className="text-2xs mr-1 flex gap-2 flex-wrap justify-end">
+            <span className="text-xs mr-1 flex gap-2 flex-wrap justify-end">
               {stack.map((s) => (
                 <mark className="px-1 text-white bg-sky-500 rounded-sm">
                   {s}
