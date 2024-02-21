@@ -25,6 +25,10 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      html {
+        width: 100%;
+        /* font-size: 80%; */
+      }
       body {
         font-family: "Sono", monospace;
         font-optical-sizing: auto;
@@ -34,9 +38,9 @@
   </head>
 
   <body
-    class="p-4 text-sm max-w-5xl min-w-96 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
+    class="p-2 md:p-4 text-xs md:text-sm max-w-5xl sm:m-1 md:m-6 lg:mx-auto border border-solid border-sky-500 shadow-lg rounded-lg print:border-none print:p-0 print:shadow-none print:text-xs"
   >
-    <header class="border-b border-sky-500 m-1 p-1 text-center">
+    <header class="border-b border-sky-500 m-1 pb-4 text-center">
       <h1 class="text-sky-500 text-3xl">Luke Storry</h1>
       <p class="font-bold text-lg py-0 my-2">Full-stack Software Engineer</p>
       <p>
@@ -49,7 +53,7 @@
       </p>
     </header>
 
-    <div id="root" class="flex gap-4" />
+    <div id="root" class="flex gap-2 md:gap-4" />
   </body>
 
   <script type="text/babel">
@@ -63,7 +67,7 @@
     );
 
     const Left = () => (
-      <aside className="mt-2 pr-4 border-r border-sky-500 col-span-2 min-w-44">
+      <aside className="mt-2 pr-2 md:pr-4 border-r border-sky-500 min-w-44">
         <div>
           <p>07XXX XXXXXX</p>
           <p>
@@ -120,11 +124,11 @@
     );
 
     const Right = () => (
-      <main className="col-span-5">
+      <main className="">
         <Section
           title="Senior Software Engineer"
           company="Let's Do This"
-          date="2022 -> Present"
+          date="2022→Present"
           stack={["Typescript", "NextJs", "Node.js", "Graphql", "MongoDB"]}
           details={[
             "High-velocity fullstack engineer at the leading sports-event discovery and management startup.",
@@ -194,9 +198,9 @@
 
     const Section = ({ title, company, details, stack, date }) => (
       <section className="pt-4 mt-4 border-t border-sky-500 first:border-none first:pt-0">
-        <div className="flex gap-8 justify-between items-center">
-          <div className="shrink-0">
-            <h3 className="text-sky-500 text-lg">{title}</h3>
+        <div className="flex gap-2 md:gap-8 justify-between items-center">
+          <div className="md:shrink-0 min-w-28 sm:min-w-72">
+            <h3 className="text-sky-500 text-base md:text-lg">{title}</h3>
             <span className="flex gap-4 items-center">
               {
                 //company && <span className="font-thin text-xs">{company}</span>
